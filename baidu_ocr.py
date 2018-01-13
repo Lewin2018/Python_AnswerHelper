@@ -14,9 +14,9 @@ token_url = 'https://aip.baidubce.com/oauth/2.0/token?grant_type=client_credenti
 access_token_url = requests.get(token_url).json()
 access_token = access_token_url['access_token'] #  access_token是获取一次就可以使用三十天的，为了方便可以在获取后将前面的代码注释掉，直接赋值这条语句
 
-dr_url = 'https://www.baidu.com/'
-driver = webdriver.Chrome()
-driver.get(dr_url)
+#dr_url = 'https://www.baidu.com/'
+#driver = webdriver.Chrome()
+#driver.get(dr_url)
 # 如果需要使用result_selenium请将这条语句前面的三行的#删除
 
 while 1:
